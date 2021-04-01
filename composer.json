@@ -16,8 +16,8 @@
         }
     ],
     "require": {
-        "php": "^7.1",
-        "illuminate/support": "^6.0"
+        "php": "^7.3",
+        "illuminate/support": "^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0",
@@ -27,16 +27,6 @@
         "psr-4": {
             "GregBrown\\ThumbnailServer\\": "src"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "GregBrown\\ThumbnailServer\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
     "config": {
         "sort-packages": true
