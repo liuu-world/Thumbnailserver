@@ -1,6 +1,6 @@
 <?php
 
-namespace Gb\Thumbshower;
+namespace GregBrown\Thumbshower;
 
 #use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\File;
