@@ -13,7 +13,7 @@ class ThumbshowerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind("thumb", \GB\Thumbshower\DoThumb::class);
+        $this->app->bind("thumb", \GB\Thumbshower\Thumbshower::class);
     }
 
     /**
