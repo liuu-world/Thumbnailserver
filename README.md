@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/gregbrown/thumbnailserver.svg?style=flat-square)](https://scrutinizer-ci.com/g/gregbrown/thumbnailserver)
 [![Total Downloads](https://img.shields.io/packagist/dt/gregbrown/thumbnailserver.svg?style=flat-square)](https://packagist.org/packages/gregbrown/thumbnailserver)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Serve images when found, if not a placeholder.
 
 ## Installation
 
@@ -18,13 +18,7 @@ composer require gregbrown/thumbnailserver
 ## Usage
 
 ``` php
-// Usage description here
-```
-
-### Testing
-
-``` bash
-composer test
+thumb($path,$type,$size) - path is the name of the image, type is something like campaign and size might be thumbs or 400x300_folder
 ```
 
 ### Changelog
