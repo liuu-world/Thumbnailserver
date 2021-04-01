@@ -1,7 +1,6 @@
 {
-    "name": "gregbrown/thumbshower",
-    "description": "This is to display images",
-    "type": "plugin",
+    "name": "laravelarticle/my-package",
+    "description": "This is to display images from a particular folder",
     "license": "MIT",
     "authors": [
         {
@@ -12,10 +11,26 @@
     "minimum-stability": "dev",
     "version": "1.0.0",
     "prefer-stable": true,
+    "require": {
+        "php": "^7.3",
+        "illuminate/support": "^6.0"
+    },
     "autoload": {
         "psr-4": {
-            "GregBrown\\Thumbshower\\": "src/"
+            "GregBrown\\Thumbshower\\": "src"
         }
     },
-    "require": {}
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GregBrown\\Thumbshower\\ThumbshowerServiceProvider"
+            ],
+            "aliases": {
+                "Thumbshower": "GregBrown\\Thumbshower\\Facades\\ThumbshowerFacade"
+            }
+        }
+    }
+  
 }
+
+ 
