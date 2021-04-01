@@ -7,7 +7,7 @@ class ThumbnailServer
 {
     public function thumb($filename,$type,$size)
     {
-        if( $path != null) {
+        if( $filename != null) {
             if (Storage::disk('public')->exists("/$type/$size/" . $filename))
                 return Storage::disk('public')->url("/$type/$size/" . $filename);
             else
