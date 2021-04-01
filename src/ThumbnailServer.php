@@ -1,7 +1,7 @@
 <?php
 
 namespace GregBrown\ThumbnailServer;
-use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class ThumbnailServer
 {
