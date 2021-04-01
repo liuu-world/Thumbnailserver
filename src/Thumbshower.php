@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 
 class Thumbshower
 {
-    public function DoThumb($path,$type,$size)
+    public function thumb($path,$type,$size)
     {
         if (File::exists("/storage/public/{$type}/{$size}/" . $path))
             return url("/storage/public/{$type}/{$size}/" . $path);
