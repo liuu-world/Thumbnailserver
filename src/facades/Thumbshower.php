@@ -2,7 +2,7 @@
 namespace GregBrown\Thumbshower\Facades;
 use Illuminate\Support\Facades\Facade;
 
-class Thumbshower extends Facade
+class ThumbshowerFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
