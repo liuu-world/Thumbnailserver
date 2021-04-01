@@ -1,36 +1,54 @@
 {
-    "name": "laravelarticle/my-package",
-    "description": "This is to display images from a particular folder",
+    "name": "gregbrown/thumbnailserver",
+    "description": "Greg's first package",
+    "keywords": [
+        "gregbrown",
+        "thumbnailserver"
+    ],
+    "homepage": "https://github.com/gregbrown/thumbnailserver",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "Greg Brown",
-            "email": "greg@liuu.world"
+            "email": "greg@liuu.world",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
-    "version": "1.0.0",
-    "prefer-stable": true,
     "require": {
-        "php": "^7.3",
-        "illuminate/support": "^8.0"
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
     },
     "autoload": {
         "psr-4": {
-            "GregBrown\\Thumbshower\\": "src"
+            "GregBrown\\ThumbnailServer\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GregBrown\\ThumbnailServer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
     },
     "extra": {
         "laravel": {
             "providers": [
-                "GregBrown\\Thumbshower\\ThumbshowerServiceProvider"
+                "GregBrown\\ThumbnailServer\\ThumbnailServerServiceProvider"
             ],
             "aliases": {
-                "Thumbshower": "GregBrown\\Thumbshower\\Facades\\ThumbshowerFacade"
+                "ThumbnailServer": "GregBrown\\ThumbnailServer\\ThumbnailServerFacade"
             }
         }
     }
-  
 }
-
- 

@@ -1,17 +1,12 @@
 <?php
 
-namespace GregBrown\Thumbshower;
+namespace GregBrown\ThumbnailServer;
 
-#use Intervention\Image\Facades\Image;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
-
-class Thumbshower
+class ThumbnailServer
 {
     public function thumb($path,$type,$size)
     {
         if (File::exists("/storage/public/{$type}/{$size}/" . $path))
             return url("/storage/public/{$type}/{$size}/" . $path);
     }
-
 }
