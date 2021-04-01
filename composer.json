@@ -10,6 +10,8 @@
         }
     ],
     "minimum-stability": "dev",
+    "version": "1.0.0",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "GB\\Thumbshower\\": "src/"
