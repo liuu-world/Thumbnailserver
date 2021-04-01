@@ -1,8 +1,8 @@
 <?php
-namespace GB\GBThumbnail\Facades;
+namespace GregBrown\Thumbshower\Facades;
 use Illuminate\Support\Facades\Facade;
 
-class GBThumbnail extends Facade
+class Thumbshower extends Facade
 {
     protected static function getFacadeAccessor()
     {

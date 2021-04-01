@@ -1,6 +1,6 @@
 {
-    "name": "gb/thumbshower",
-    "description": "This is to display images for LiUU",
+    "name": "gregbrown/thumbshower",
+    "description": "This is to display images",
     "type": "plugin",
     "license": "MIT",
     "authors": [
@@ -14,7 +14,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "GB\\Thumbshower\\": "src/"
+            "GregBrown\\Thumbshower\\": "src/"
         }
     },
     "require": {}
